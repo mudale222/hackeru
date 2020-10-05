@@ -1,0 +1,40 @@
+body {
+    font-size: 17px;
+    color: #fff;
+    font-family: almoni-dl, sans-serif;
+    direction: rtl;
+}
+
+.purplish {
+    background: #223A7F;
+}
+
+.dark-purple {
+    background: #122045;
+}
+
+.grey {
+    color: #333;
+}
+
+.TopNavbar {
+    /* height: 3rem; */
+}
+
+/* input {
+    font-family:Arial, FontAwesome;
+} */
+
+.TopNavbar a {
+    color: white;
+}
+
+.wl {
+    width: 1px;
+    float: right;
+    background: #fff;
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline;
+}

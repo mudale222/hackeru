@@ -41,6 +41,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener('scroll', (e) => {
+
+      if (window.scrollY && window.scrollY != 0 &&
+        !document.getElementsByClassName("stickyNavbar")[0].classList.contains("bottomBorderBlue")) {
+        console.log(window.scrollY)
+        document.getElementsByClassName("stickyNavbar")[0].classList.add("bottomBorderBlue")
+      }
+      else if (window.scrollY == 0 && document.getElementsByClassName("stickyNavbar")[0].classList.contains("bottomBorderBlue"))
+        document.getElementsByClassName("stickyNavbar")[0].classList.remove("bottomBorderBlue")
+    });
+  </script>
 </body>
 
 </html>

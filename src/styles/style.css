@@ -78,7 +78,7 @@ body {
     text-align: center;
     position: absolute;
     /* top: -1rem; */
-    top:0;
+    top: 0;
     left: 0;
     /* float: left;
     top: -40px; */
@@ -95,13 +95,13 @@ body {
     /* position: relative; */
     background: white;
 }
+
 .stickyContainer {
     max-width: 940px;
     margin: auto;
     position: relative;
     padding: 1rem;
 }
-
 
 .TopNavbar a {
     color: white;
@@ -208,6 +208,10 @@ body {
     font-weight: 700;
 }
 
+.ourCourses {
+    padding-bottom: 8rem!important;
+}
+
 .ourCourses .title {
     text-align: right;
 }
@@ -276,6 +280,7 @@ form input {
     margin-right: 10px;
     text-align: right;
 }
+
 .check a {
     display: inline;
     float: right;
@@ -285,6 +290,7 @@ form input {
     margin-right: 10px;
     text-align: right;
 }
+
 .check a {
     text-align: center;
     min-width: 100%;
@@ -316,5 +322,71 @@ form input {
 }
 
 .bottomBorderBlue {
-     border-bottom: 2px solid #213a7f;
+    border-bottom: 2px solid #213a7f;
+}
+
+.card {
+    height: 145px;
+    bottom: 50%;
+    border: 0;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card-title {
+    padding-top: 0.5em;
+    margin: 0.6em 0 0.3em;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.card-text {
+    font-size: 11px;
+}
+
+.card-body {
+    padding: 0px 35px;
+}
+
+.cardImg {
+    align-self: center;
+}
+
+.firstCard {
+    background: transparent linear-gradient(252deg, #FFFFFF 0%, #F5F7FF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 7px 7px 0px rgba(139, 145, 147, 0.40);
+}
+
+.secondCard {
+    box-shadow: -5px 7px 7px 0px rgba(139, 145, 147, 0.40);
+}
+
+/* .cardsContainer .col-sm-5 {
+    padding: 0;
+} */
+
+.benfeitsGrid .courseIconAndText {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.benfeitsGrid h5 {
+    text-align: right;
+    font-size: 21px;
+    color: #333;
+    font-weight: 700;
+}
+
+.benfeitsGrid label {
+    font-size: 17px;
+    text-align: right;
+    line-height: inherit;
+}
+
+.benfeitsGrid img {
+    border: none;
+    margin-left: 1.5rem;
+    width:70px;
 }

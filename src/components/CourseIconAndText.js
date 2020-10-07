@@ -4,7 +4,10 @@ const CourseIconAndText = (props) => {
     return (
         <div className="courseIconAndText container">
             <img className="courseImg" src={props.imgSrc} alt="courseIcon" />
-            <p className="courseText grey">{props.text}</p>
+            <div className="headerLabelContainer">
+                {props.header ? <h5 className="display-5">{props.header}</h5> : ""}
+                <label className="courseText grey">{props.text}</label>
+            </div>
         </div>
     )
 }

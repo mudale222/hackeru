@@ -3,7 +3,7 @@ import TopNavbar from './TopNavbar'
 import StickyNavbar from './StickyNavbar'
 import Banner from './Banner.js'
 import OurCourses from './OurCourses.js'
-import Benfits  from './Benfits.js'
+import Benefits  from './Benefits.js'
 import '../styles/style.css'
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
             <StickyNavbar />
             <Banner/>
             <OurCourses/>
-            <Benfits/>
+            <Benefits/>
         </>
     )
 }

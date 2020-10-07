@@ -219,7 +219,28 @@ body {
 .col {
     min-width: 50px;
     min-height: 50px;
-    ;
+}
+
+@keyframes coursesIconsMoveOnPageLoad {
+    0% {
+        top: 50px;
+    }
+    25% {
+        top: 35px;
+    }
+    50% {
+        top: 22px;
+    }
+    75% {
+        top: 12px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+div[class*=coursesRow] {
+    animation: 0.5s linear coursesIconsMoveOnPageLoad;
 }
 
 .courseImg {
@@ -388,5 +409,69 @@ form input {
 .benfeitsGrid img {
     border: none;
     margin-left: 1.5rem;
-    width:70px;
+    width: 70px;
+}
+
+.ourProgressCard {
+    width: 220px;
+    height: 310px;
+}
+
+.hrLine {
+    border-bottom: solid 1px white;
+}
+
+.cardNumber {
+    background: white;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 100%; */
+    /* text-align: center; */
+    display: flex;
+}
+
+.cardHeader {
+    font-size: 1.75rem;
+}
+
+.cardText {
+    font-size: 0.92rem;
+}
+
+@keyframes ourProgressCardAnimation {
+    0% {
+        transform: translate( 1000%, 0);
+    }
+    100% {
+        transform: translate( 0%, 0);
+    }
+}
+
+.card1 {
+    animation: 1s linear ourProgressCardAnimation;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+
+}
+
+.card2 {
+    animation: 1s linear ourProgressCardAnimation;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+.card3 {
+    animation: 1s linear ourProgressCardAnimation;
+    animation-delay: 0.75s;
+    animation-fill-mode: both;
+}
+
+.card4 {
+    animation: 1s linear ourProgressCardAnimation;
+    animation-delay: 1s;
+    animation-fill-mode: both;
 }

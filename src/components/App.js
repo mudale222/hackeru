@@ -4,6 +4,8 @@ import StickyNavbar from './StickyNavbar'
 import Banner from './Banner.js'
 import OurCourses from './OurCourses.js'
 import Benefits  from './Benefits.js'
+import HowItsWork from './HowItsWork'
+
 import '../styles/style.css'
 
 const App = () => {
@@ -14,6 +16,7 @@ const App = () => {
             <Banner/>
             <OurCourses/>
             <Benefits/>
+            <HowItsWork/>
         </>
     )
 }

@@ -5,12 +5,14 @@ import Banner from './Banner.js'
 import OurCourses from './OurCourses.js'
 import Benefits  from './Benefits.js'
 import HowItsWork from './HowItsWork'
+import CircleBanner from './CircleBanner'
 
 import '../styles/style.css'
 
 const App = () => {
     return (
         <>
+            <CircleBanner/>
             <TopNavbar />
             <StickyNavbar />
             <Banner/>

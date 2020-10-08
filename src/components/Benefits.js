@@ -4,31 +4,31 @@ const Benefits = () => {
     return (
         <div className="Benfits bg-white text-dark text-right">
             <div className="cardsContainer container">
-                <div class="row">
-                    <div class="col-12 col-lg-5 p-0">
-                        <div class="card firstCard">
-                            <div class="card-body row">
+                <div className="row">
+                    <div className="col-12 col-lg-5 p-0">
+                        <div className="card firstCard">
+                            <div className="card-body row">
                                 <div className="cardImg col-3">
                                     <img src="/global.svg" alt="" />
                                 </div>
                                 <div className="cardTextContainer col">
-                                    <h5 class="card-title">HackerU העולמית</h5>
-                                    <p class="card-text">ל- HackerU פריסה עולמית הכוללת שיתופי פעולה עם אוניברסיטאות מובילות בארה"ב, הודו ואירופה. במסגרת שיתוף הפעולה HackerU מציעה מסלולי לימוד שונים כדוגמת: סייבר ואבטחת מידע, שיווק דיגיטלי, UI\UX ועוד.</p>
-                                    <a href="#" class="card-text">קרא עוד ←</a>
+                                    <h5 className="card-title">HackerU העולמית</h5>
+                                    <p className="card-text">ל- HackerU פריסה עולמית הכוללת שיתופי פעולה עם אוניברסיטאות מובילות בארה"ב, הודו ואירופה. במסגרת שיתוף הפעולה HackerU מציעה מסלולי לימוד שונים כדוגמת: סייבר ואבטחת מידע, שיווק דיגיטלי, UI\UX ועוד.</p>
+                                    <a href="#" className="card-text">קרא עוד ←</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-5 p-0">
-                        <div class="card secondCard">
-                            <div class="card-body row">
+                    <div className="col-12 col-lg-5 p-0">
+                        <div className="card secondCard">
+                            <div className="card-body row">
                                 <div className="cardImg col-3">
                                     <img src="/buildings.svg" alt="" />
                                 </div>
                                 <div className="cardTextContainer col">
-                                    <h5 class="card-title">HackerU לעסקים</h5>
-                                    <p class="card-text">HackerU-Pro החטיבה העסקית של HackerU מתמחה בהכשרה מקצועית בתחומי ההייטק והעיצוב השונים. מתן ייעוץ מקצועי לעסקים וגופים ממשלתיים בנושאים טכנולוגיים מגוונים.</p>
-                                    <a href="#" class="card-text">קרא עוד ←</a>
+                                    <h5 className="card-title">HackerU לעסקים</h5>
+                                    <p className="card-text">HackerU-Pro החטיבה העסקית של HackerU מתמחה בהכשרה מקצועית בתחומי ההייטק והעיצוב השונים. מתן ייעוץ מקצועי לעסקים וגופים ממשלתיים בנושאים טכנולוגיים מגוונים.</p>
+                                    <a href="#" className="card-text">קרא עוד ←</a>
                                 </div>
                             </div>
                         </div>

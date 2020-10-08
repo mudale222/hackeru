@@ -14,8 +14,8 @@ const TopNavbar = () => (
                 <input className="mr-2 border-0 dark-purple py-3 d-none d-xl-block" type="search" placeholder="  חיפוש" aria-label="Search"></input>
                 
                 <button className="dark-purple border-0 d-none d-xl-block">
-                    <div class="wl d-md-block"></div>
-                    <i class="fa fa-search text-white ml-2 d-xl-inline"></i>
+                    <div className="wl d-md-block"></div>
+                    <i className="fa fa-search text-white ml-2 d-xl-inline"></i>
                 </button>
                
                 {/* </form> */}

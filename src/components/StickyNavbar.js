@@ -22,6 +22,8 @@ const StickyNavbar = () => {
                 <DropDown data={btn6Props} />
                 <a className="grey mr-2 d-none d-xl-block" href="">השכרת כיתות</a>
                 <div className="soliderTag d-none d-xl-block">
+                    <label htmlFor="" className="soliderLabel">חייל משוחרר?</label>
+                    <a href="" className="soliderHref">לחץ כאן</a>
                 </div>
             </div>
 

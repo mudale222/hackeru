@@ -11,9 +11,9 @@ const CircleBanner = () => {
             <label htmlFor="" className="circleBannerMiddleHeader">ללמוד הייטק ודיגיטל LIVE בזמן שנוח לך</label>
             <label htmlFor="" className="circleBannerBottomHeader">רוצה לשמוע עוד?</label>
             <form action="">
-                <input type="text" name="fullName" id="fullName" className="fullName" placeholder="שם מלא" />
-                <input type="tel" name="telephone" id="telephone" className="telephone" placeholder="מספר טלפון" />
-                <input type="email" name="email" id="email" className="email" placeholder="אי-מייל" />
+                <input type="text" name="circleFullName" id="circleFullName" className="circleFullName" placeholder="שם מלא" />
+                <input type="tel" name="circleTelephone" id="circleTelephone" className="circleTelephone" placeholder="מספר טלפון" />
+                <input type="email" name="circleEmail" id="circleEmail" className="circleEmail" placeholder="אי-מייל" />
                 <div className="aprroveUpdates d-flex ">
                     <input type="checkbox" className="m-0" name="aprroveUpdatesInput" id="aprroveUpdatesInput" />
                     <label htmlFor="aprroveUpdates" className=" aprroveUpdatesLabel">אני מאשר קבלת עדכונים ומבצעים מהאקריו</label>

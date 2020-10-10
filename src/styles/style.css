@@ -1,6 +1,6 @@
 /*** DO NOT MOVE FROM THIS LOCATION, REMOVING THEM DINAMICLLY IN CircleBanner.js line 8!!!!!  ***/
 
-#root * {
+#root>div {
     opacity: 0.6;
     background-color: grey;
 }
@@ -11,6 +11,11 @@
 }
 
 /************************************************************************************************/
+
+/* @font-face {
+    font-family: 'almoni-dl';
+    src: url('/almoni.woff2') format('woff2');
+} */
 
 body {
     font-size: 17px;
@@ -74,6 +79,17 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.soliderLabel {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.soliderHref {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #eee;
 }
 
 .stickyNavbar {
@@ -325,7 +341,9 @@ form input {
 .Benfits {
     background-image: url("/backgroundPng.png");
     width: 100%;
-    height: 70em;
+    /* height: 53em; */
+    min-height: fit-content;
+    padding-bottom: 4rem;
 }
 
 .bottomBorderBlue {
@@ -361,6 +379,12 @@ form input {
     align-self: center;
 }
 
+.vectorImg {
+    position: absolute;
+    right: 15px;
+    top: 38px;
+}
+
 .firstCard {
     background: transparent linear-gradient(252deg, #FFFFFF 0%, #F5F7FF 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 7px 7px 0px rgba(139, 145, 147, 0.40);
@@ -390,6 +414,16 @@ form input {
     font-size: 17px;
     text-align: right;
     line-height: inherit;
+}
+
+@media (max-width: 991.98px) {
+    .howItsWorkContainer {
+        width: 300px;
+        margin: auto;
+    }
+    .howItsWorkHeader {
+        font-size: 30px;
+    }
 }
 
 .benfeitsGrid img {
@@ -440,28 +474,27 @@ form input {
 .card1 {
     display: block!important;
     animation: 1s linear ourProgressCardAnimation;
-    animation-delay: 0.1s;
     animation-fill-mode: both;
 }
 
 .card2 {
     display: block!important;
     animation: 1s linear ourProgressCardAnimation;
-    animation-delay: 0.5s;
+    animation-delay: 0.4s;
     animation-fill-mode: both;
 }
 
 .card3 {
     display: block!important;
     animation: 1s linear ourProgressCardAnimation;
-    animation-delay: 0.75s;
+    animation-delay: 0.70s;
     animation-fill-mode: both;
 }
 
 .card4 {
     display: block!important;
     animation: 1s linear ourProgressCardAnimation;
-    animation-delay: 1s;
+    animation-delay: 0.85s;
     animation-fill-mode: both;
 }
 
@@ -527,7 +560,7 @@ form input {
     font-size: 1.25rem;
 }
 
-#fullName, #telephone, #email {
+#circleFullName, #circleTelephone, #circleEmail {
     height: 30px;
     width: 300px;
     margin: auto;
@@ -535,7 +568,7 @@ form input {
     box-shadow: 3px 3px 7px 0px rgba(139, 145, 147, 0.40);
 }
 
-#fullName::placeholder, #telephone::placeholder, #email::placeholder {
+#circleFullName::placeholder, #circleTelephone::placeholder, #circleEmail::placeholder {
     color: #28479B;
     font-size: 15px;
     font-weight: bolder;
@@ -558,7 +591,7 @@ form input {
 
 .circleBannerSubmitButton {
     color: white;
-    background: #285387;
+    background: #285387!important;
     border: none;
     font-size: 20px;
     margin: 0 67%;
@@ -578,7 +611,7 @@ form input {
 
 .circleAnim {
     /* display: block!important; */
-    animation: 2s linear circleAnimation;
+    animation: 1s linear circleAnimation;
     /* animation-delay: 0.25s; */
     animation-fill-mode: both;
 }
@@ -589,4 +622,21 @@ form input {
     position: absolute;
     top: 2%;
     left: 50%;
+}
+
+@keyframes trandformUpAnimation {
+    0% {
+        transform: translate( 0%, 25%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate( 0%, 0%);
+        opacity: 1;
+    }
+}
+
+.transformUp {
+    visibility: visible!important;
+    animation: 0.5s linear trandformUpAnimation;
+     animation-fill-mode: both; 
 }

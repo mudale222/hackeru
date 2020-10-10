@@ -1,5 +1,29 @@
 import React, { useEffect, useState, useReducer } from 'react'
 import CourseIconAndText from './CourseIconAndText'
+import isElementInViewport from './Uti'
+
+
+let elArr = [{ id: "benfeitsGridHeader", isVisable: false }, { id: "benfeitsGridRow1", isVisable: false },
+{ id: "benfeitsGridRow2", isVisable: false }, { id: "benfeitsGridRow3", isVisable: false },
+{ id: "benfeitsGridRow4", isVisable: false }];
+
+window.addEventListener('scroll', (e) => {
+    // benfeitsGridRow1
+    elArr.forEach(el => {
+        if (!el.isVisable) {
+            const elements = document.getElementsByClassName(el.id)
+            console.log(elements)
+            let arrElements = [...elements]
+            arrElements.forEach(el2 => {
+                if (isElementInViewport(el2)) {
+                    el2.isVisable = true;
+                    el2.classList.add("transformUp")
+                }
+            })
+        }
+    })
+});
+
 const Benefits = () => {
     return (
         <div className="Benfits bg-white text-dark text-right">
@@ -37,39 +61,39 @@ const Benefits = () => {
             </div>
 
 
-            <h1 className="display-5 blackish container">היתרונות ללומדים בהאקריו</h1>
+            <h1 className="invisible display-5 blackish container benfeitsGridHeader ">היתרונות ללומדים בהאקריו</h1>
             <div className="benfeitsGrid container">
                 <div className="row">
-                    <div className="col-12 col-md-6">
+                    <div className="invisible col-12 col-md-6 benfeitsGridRow1">
                         <CourseIconAndText imgSrc="/arrow.svg" header="שיטת מיון ייחודית"
                             text="שיטת מיון ייחודית לזיהוי והתאמת כישוריך בתחומי ההייטק הכוללת התנסות מעשית ללא סיכון כספי"
                             link="שיטת המיון" url="" />
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="invisible col-12 col-md-6 benfeitsGridRow1">
                         <CourseIconAndText imgSrc="/program.svg" header="ללמוד מהבית מקצוע Online"
                             text="קורסים אונליין הישר בשידור LIVE למחשב שלכם בבית. אותם מסלולי הלימוד והתכנים עם הטכנולוגיה האיכותית והטובה ביותר." />
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="invisible col-12 col-md-6 benfeitsGridRow2">
                         <CourseIconAndText imgSrc="/doctors.svg" header="סגל מרצים מנצח"
                             text="סגל הוראה המתמחה במקצועות ההייטק המבוקשים בניהם מנהלים בכירים בחברות הייטק, יזמים ועצמאיים בעלי חברות וניסיון מעשי רב שנים. אחרת איך תלמדו את הפרקטיקה הנדרשת בשוק העבודה?"
                             link="מיהם המרצים?" url="" />
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="invisible col-12 col-md-6 benfeitsGridRow2">
                         <CourseIconAndText imgSrc="/milga.svg" header="מלגת לימודים והתחייבות חוזית לעבודה"
                             text='מאות מעסיקים, מנכל"ים, סמנכל"ים ומנהלות משאבי אנוש מהחברות הגדולות בשוק שעובדים איתנו כדי למצוא לכם עבודה בסיום הלימודים! סטודנט שעבר בהצלחה את שלב המיון יקבל התחייבות חוזית לעבודה ומלגת לימודים עד ₪7,000 גובה המלגה תלוי במסלול ההכשרה שבחרת'
                             link="מי מעסיק את הבוגרים שלנו?" url="" />
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="invisible col-12 col-md-6 benfeitsGridRow3">
                         <CourseIconAndText imgSrc="/program.svg" header="תוכנית לימודים מקיפה"
                             text="הקורסים המקיפים והפרקטיים ביותר מבחינת כמות שעות ותכנים המותאמים לשוק העבודה"
                             link="מה לומדים?" url="" />
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="invisible col-12 col-md-6 benfeitsGridRow3">
                         <CourseIconAndText imgSrc="/location.svg" header="מיקום מרכזי"
                             text="קל להגיע וקל לחזור, ארבעה סניפים בערים מרכזיות רמת גן, ירושלים, באר שבע וחיפה, רק 5 דקות מתחנת הרכבת"
                             link="איפה אנחנו יושבים?" url="" />
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="invisible col-12 col-md-6 benfeitsGridRow4">
                         <CourseIconAndText imgSrc="/prisa.svg" header="פריסה עולמית"
                             text='שיתופי פעולה עם אוניברסיטאות מובילות ברחבי ארה"ב, הודו ואירופה' />
                     </div>

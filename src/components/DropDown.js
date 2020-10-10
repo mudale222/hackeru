@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useReducer } from 'react'
 
 const DropDown = (props) => {
-    // console.log(props)
     return (
         <div className="dropdown mr-2 d-none d-xl-block">
             <button className="btn grey dropdown-toggle p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -11,9 +10,6 @@ const DropDown = (props) => {
                 {props.data.list.map(listName => {
                     return <a key={listName+props.data.title} className="dropdown-item dropdownText" href="#">{listName}</a>
                 })}
-                {/* <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a> */}
             </div>
         </div>
     )

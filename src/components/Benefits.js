@@ -8,11 +8,9 @@ let elArr = [{ id: "benfeitsGridHeader", isVisable: false }, { id: "benfeitsGrid
 { id: "benfeitsGridRow4", isVisable: false }];
 
 window.addEventListener('scroll', (e) => {
-    // benfeitsGridRow1
     elArr.forEach(el => {
         if (!el.isVisable) {
             const elements = document.getElementsByClassName(el.id)
-            console.log(elements)
             let arrElements = [...elements]
             arrElements.forEach(el2 => {
                 if (isElementInViewport(el2)) {

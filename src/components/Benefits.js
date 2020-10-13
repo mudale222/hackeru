@@ -2,7 +2,6 @@ import React, { useEffect, useState, useReducer } from 'react'
 import CourseIconAndText from './CourseIconAndText'
 import isElementInViewport from './Uti'
 
-
 let elArr = [{ id: "benfeitsGridHeader", isVisable: false }, { id: "benfeitsGridRow1", isVisable: false },
 { id: "benfeitsGridRow2", isVisable: false }, { id: "benfeitsGridRow3", isVisable: false },
 { id: "benfeitsGridRow4", isVisable: false }];
@@ -57,7 +56,6 @@ const Benefits = () => {
                     </div>
                 </div>
             </div>
-
 
             <h1 className="invisible display-5 blackish container benfeitsGridHeader ">היתרונות ללומדים בהאקריו</h1>
             <div className="benfeitsGrid container">

@@ -36,7 +36,9 @@ const HowItsWork = () => {
     return (
         <div className="howItsWork my-5">
             <div className="howItsWorkContainer container blackish text-right">
+             
                 <h4 className="invisible display-4 pb-2 howItsWorkHeader">איך זה עובד?</h4>
+                
                 <div className="row">
                     <div className="col-12 col-lg-4">
                         <label className="invisible text1">HackerU מקיימת קשרי עבודה ענפים עם למעלה מ- 1400 חברות ברחבי הארץ ובעצם משמשת כקרש קפיצה לעולם ההייטק. חברות רבות כבר יודעות שב– HackerU הן יכולות למצוא כוח אדם מקצועי, מיומן ואיכותי בעל ידע פרקטי ויישומי לעבודה. ל-HackerU שיתופי פעולה ברחבי העולם, שם היא מלמדת את קורסי סייבר ואבטחת מידע ושיווק דיגיטלי באוניברסיטאות המובילות בארה"ב, הודו ואירופה.</label>
@@ -58,6 +60,7 @@ const HowItsWork = () => {
                 <button className="meetingButton text-white d-none d-lg-block">
                     <label htmlFor="" className="meetingButtonText">קביעת פגישת ייעוץ</label>
                 </button>
+           
             </div>
         </div>
     )

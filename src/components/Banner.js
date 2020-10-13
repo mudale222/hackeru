@@ -2,7 +2,7 @@ import React, { useEffect, useState, useReducer } from 'react'
 
 const Banner = () => {
     return (
-        <div className="banner mt-3">
+        <div className="banner">
             <div className="container text-center align-middle">
                 <h3 className="display-5">
                     המרכז להשמה והכשרת עובדים למקצועות ההייטק

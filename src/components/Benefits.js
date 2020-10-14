@@ -35,7 +35,7 @@ const Benefits = () => {
                                 <div className="cardTextContainer col">
                                     <h5 className="card-title">HackerU העולמית</h5>
                                     <p className="card-text">ל- HackerU פריסה עולמית הכוללת שיתופי פעולה עם אוניברסיטאות מובילות בארה"ב, הודו ואירופה. במסגרת שיתוף הפעולה HackerU מציעה מסלולי לימוד שונים כדוגמת: סייבר ואבטחת מידע, שיווק דיגיטלי, UI\UX ועוד.</p>
-                                    <a href="#" className="card-text">קרא עוד ←</a>
+                                    <a href="#" className="card-text card-text-read-more">קרא עוד ←</a>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const Benefits = () => {
                                 <div className="cardTextContainer col">
                                     <h5 className="card-title">HackerU לעסקים</h5>
                                     <p className="card-text">HackerU-Pro החטיבה העסקית של HackerU מתמחה בהכשרה מקצועית בתחומי ההייטק והעיצוב השונים. מתן ייעוץ מקצועי לעסקים וגופים ממשלתיים בנושאים טכנולוגיים מגוונים.</p>
-                                    <a href="#" className="card-text">קרא עוד ←</a>
+                                    <a href="#" className="card-text card-text-read-more">קרא עוד ←</a>
                                 </div>
                             </div>
                         </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useReducer } from 'react'
 
 const CourseIconAndText = (props) => {
     return (
-        <div className="courseIconAndText container">
+        <div className="courseIconAndText container row">
             <img className="courseImg" src={props.imgSrc} alt="courseIcon" />
             <div className="headerLabelContainer">
                 {props.header ? <h5 className="display-5">{props.header}</h5> : ""}

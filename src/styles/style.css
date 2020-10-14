@@ -261,6 +261,10 @@ div[class*=coursesRow] {
     margin-top: 5px;
 }
 
+.coursesMainRow .courseIconAndText .headerLabelContainer .courseText {
+    vertical-align: text-top;
+}
+
 .wantToHearMore {
     position: relative;
     max-width: 300px;
@@ -373,6 +377,27 @@ form input::placeholder {
     font-size: 11px;
 }
 
+.card-text-read-more {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px!important;
+}
+
+@media (max-width:1200px) {
+    .card-text-read-more {
+        margin-bottom: 3px!important;
+    }
+}
+@media (max-width:1000px) {
+    .card-text-read-more {
+        margin-bottom: 20px!important;
+    }
+}
+@media (max-width:600px) {
+    .card-text-read-more {
+        margin-bottom: 5px!important;
+    }
+}
 .card-body {
     padding: 0px 35px;
 }
@@ -723,4 +748,32 @@ form input::placeholder {
 .rentClassA {
     margin-top: 8px;
     font-size: 1rem;
+}
+
+/* .coursesAndHearMore > .row {
+    margin: 0;   
+} */
+
+@media screen and (max-width: 600px) {
+    .row {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .courseImg {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .headerLabelContainer {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .card-text {
+        font-size: 9px;
+    }
+    .card-body {
+        margin: 0;
+        padding: 0;
+    }
 }
